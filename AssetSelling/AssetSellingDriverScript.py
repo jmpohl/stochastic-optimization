@@ -19,6 +19,7 @@ if __name__ == "__main__":
     sheet2 = pd.read_excel("asset_selling_policy_parameters.xlsx", sheet_name="Sheet2")
     sheet3 = pd.read_excel("asset_selling_policy_parameters.xlsx", sheet_name="Sheet3")
     biasdf = pd.read_excel("asset_selling_policy_parameters.xlsx", sheet_name="Sheet4")
+    biasdf.drop(biasdf.columns[0], inplace=True, axis=1)
     
     
    
